@@ -17,7 +17,7 @@ export class CrearPreguntasComponent implements OnInit {
     this.agregarPregunta = this.fb.group({
       titulo: ['', Validators.required],
       segundos: [10, Validators.required],
-      puntos: [1000, Validators.required],
+      puntos: [10, Validators.required],
       respuesta1: this.fb.group({
         titulo: ['', Validators.required],
         esCorrecta: [false, Validators.required]
