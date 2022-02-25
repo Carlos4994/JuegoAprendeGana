@@ -23,3 +23,9 @@
     cursor: pointer;
     color: #a71c2B;
 }
+
+.imagenmc{
+    cursor:pointer;
+    padding-top: 15px;
+    text-align: center;
+}

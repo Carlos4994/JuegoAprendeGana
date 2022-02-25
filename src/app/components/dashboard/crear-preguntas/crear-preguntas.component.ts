@@ -123,7 +123,7 @@ export class CrearPreguntasComponent implements OnInit {
     this.agregarPregunta.patchValue({
       titulo: '',
       segundos: 10,
-      puntos: 1000,
+      puntos: 10,
       respuesta1: {
         titulo: '',
         esCorrecta: false
