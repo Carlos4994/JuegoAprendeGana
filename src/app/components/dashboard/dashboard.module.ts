@@ -13,6 +13,7 @@ import { CrearPreguntasComponent } from './crear-preguntas/crear-preguntas.compo
 import { ListPreguntasComponent } from './list-preguntas/list-preguntas.component';
 import { VerCuestionarioComponent } from './ver-cuestionario/ver-cuestionario.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
+import { CrearProvinciaComponent } from './crear-provincia/crear-provincia.component';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { EstadisticasComponent } from './estadisticas/estadisticas.component';
     DashboardComponent, 
     NavbarComponent, 
     ListCuestionariosComponent, 
-    CrearQuizzComponent, CrearPreguntasComponent, ListPreguntasComponent, VerCuestionarioComponent, EstadisticasComponent
+    CrearQuizzComponent, CrearPreguntasComponent, ListPreguntasComponent, VerCuestionarioComponent, EstadisticasComponent, CrearProvinciaComponent
   ],
   imports: [
     CommonModule,

@@ -1,11 +1,12 @@
 export class Persona{
+    id?: string;
     email: string ;
     nombre: string ;
-comunidad: string;
-numero: string;
-operadora: string;
-gestor: string;
-edad: string;
+    comunidad: string;
+    numero: string;
+    operadora: string;
+    gestor: string;
+    edad: string;
 
     constructor(email:string, nombre: string,comunidad: string,numero: string,operadora: string,gestor: string,edad: string){
         this.email=email;

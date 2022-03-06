@@ -8,6 +8,7 @@ import { CrearQuizzComponent } from './crear-quizz/crear-quizz.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { ListCuestionariosComponent } from './list-cuestionarios/list-cuestionarios.component';
 import { VerCuestionarioComponent } from './ver-cuestionario/ver-cuestionario.component';
+import { CrearProvinciaComponent } from './crear-provincia/crear-provincia.component';
 
 const routes: Routes = [
   { path: '', component: ListCuestionariosComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'verCuestionario/:id', component: VerCuestionarioComponent },
   { path: 'estadisticas/:id', component: EstadisticasComponent },
   { path: 'respuestaUsuarioAdmin/:id', component: RespuestaUsuarioComponent },
+  { path: 'crearProvincia', component: CrearProvinciaComponent },
 ];
 
 @NgModule({

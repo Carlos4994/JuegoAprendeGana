@@ -12,6 +12,8 @@ import { ErrorService } from 'src/app/services/error.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
+
   loginForm: FormGroup;
   loading = false;
 
@@ -29,6 +31,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
   login() {
     const usuario = this.loginForm.get('usuario')?.value;
     const password = this.loginForm.get('password')?.value;
@@ -42,7 +46,13 @@ export class LoginComponent implements OnInit {
         // Lo redireccionamos al dahsboard
         this.setLocalStorage(respuesta.user)
         localStorage.setItem('nombre',usuario)
-        this.router.navigate(['/dashboard'])
+
+        if(usuario=='carlosluismorales1@gmail.com'){
+          this.router.navigate(['/dashboard'])
+        }else{
+          this.router.navigate(['/inicio'])
+        }
+        
       }
      
       this.loading = false;

@@ -8,10 +8,11 @@ import { RespuestaQuizzService } from 'src/app/services/respuesta-quizz.service'
   styleUrls: ['./ingresar-nombre.component.css']
 })
 export class IngresarNombreComponent implements OnInit {
-  nombre = '';
+  nombre = localStorage.getItem('nombre')+'';
   errorText = '';
   error = false;
-
+  dato=  localStorage.getItem('nombre');
+  
   constructor(private _respuestaQuizzService: RespuestaQuizzService,
               private router: Router) { }
 
@@ -20,10 +21,10 @@ export class IngresarNombreComponent implements OnInit {
   }
 
   ingresarNombre() {
-    if(this.nombre === '') {
-      this.errorMensaje('Ingrese su nombre');
-      return;
-    }
+     if(this.nombre === '') {
+     this.errorMensaje('Ingrese su nombre');
+     return;
+     }
 
     this._respuestaQuizzService.nombreParticipante = this.nombre;
     this.router.navigate(['/jugar/iniciarContador'])

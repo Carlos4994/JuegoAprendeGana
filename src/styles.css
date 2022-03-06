@@ -21,3 +21,16 @@ body {
 .card-titulo {
     padding: 0px 22px;
 }
+
+.btn-juegoclmg{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    background-image: url(./assets/imagenes/botton.png);
+    height:50px;
+    width:140px;
+    background-size: contain;
+    background-position:center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
