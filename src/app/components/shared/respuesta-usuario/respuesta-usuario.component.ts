@@ -44,7 +44,7 @@ export class RespuestaUsuarioComponent implements OnInit {
     if(this.rutaAnterior === 'respuestaUsuarioAdmin') {
       this.router.navigate(['/dashboard/estadisticas', this.respuestaCuestionario.idCuestionario])
     } else {
-      this.router.navigate(['/']);
+      this.router.navigate(['/inicio']);
     }
   }
 

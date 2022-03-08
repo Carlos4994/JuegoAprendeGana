@@ -52,23 +52,23 @@ getProvicias(){
   })
 
 }
-  getCuestionarios() {
+  // getCuestionarios() {
     
-    this.suscriptionProvincia == this._provinciaService.getProvinciaByIdUser().subscribe(data => {
-       this.listProvicia = [];
-       this.loading = false;
-       data.forEach((element:any) => {
-         this.listProvicia.push({
-           id: element.payload.doc.id,
-           ...element.payload.doc.data()
-         })
-       });
+  //   this.suscriptionProvincia == this._provinciaService.getProvinciaByIdUser().subscribe(data => {
+  //      this.listProvicia = [];
+  //      this.loading = false;
+  //      data.forEach((element:any) => {
+  //        this.listProvicia.push({
+  //          id: element.payload.doc.id,
+  //          ...element.payload.doc.data()
+  //        })
+  //      });
       
-     }, error => {
-       console.log(error);
-       this.toastr.error('Opss.. ocurrio un error', 'Error');
-       this.loading = false;
-     })
-   }
+  //    }, error => {
+  //      console.log(error);
+  //      this.toastr.error('Opss.. ocurrio un error', 'Error');
+  //      this.loading = false;
+  //    })
+  //  }
 
 }
